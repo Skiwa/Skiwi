@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+.text-align-left{text-align: left;}
+.text-align-center{text-align: center;}
+.text-align-right{text-align: right;}
+.text-align-justify{text-align: justify;}
+
+.truncate {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// Text styles
+a {text-decoration: none;}
+em { font-style: italic; }
+strong { font-weight: 500; }
+small { font-size: 75%; }
+.light { font-weight: 300; }
+.thin { font-weight: 200; }

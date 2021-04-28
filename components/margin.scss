@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    $MARGINS
+\*------------------------------------*/
+$margin-xs: 5px;
+$margin-s: 10px;
+$margin-m: 20px;
+$margin-l: 40px;
+
+.margin-top-xs{margin-top: $margin-xs;}
+.margin-top-s{margin-top: $margin-s;}
+.margin-top-m{margin-top: $margin-m;}
+.margin-top-l{margin-top: $margin-l;}
+
+.margin-right-xs{margin-right: $margin-xs;}
+.margin-right-s{margin-right: $margin-s;}
+.margin-right-m{margin-right: $margin-m;}
+.margin-right-l{margin-right: $margin-l;}
+
+
+.margin-bottom-xs{margin-bottom: $margin-xs;}
+.margin-bottom-s{margin-bottom: $margin-s;}
+.margin-bottom-m{margin-bottom: $margin-m;}
+.margin-bottom-l{margin-bottom: $margin-l;}
+
+.margin-left-xs{margin-left: $margin-xs;}
+.margin-left-s{margin-left: $margin-s;}
+.margin-left-m{margin-left: $margin-m;}
+.margin-left-l{margin-left: $margin-l;}

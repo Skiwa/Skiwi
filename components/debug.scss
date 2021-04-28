@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    $DEBUG
+\*------------------------------------*/
+.debug-red{
+    border: 2px solid red;
+    background-color: transparentize(red, .33);
+}
+.debug-blue{
+    border: 2px solid blue;
+    background-color: transparentize(blue, .33);
+}
+.debug-green{
+    border: 2px solid green;
+    background-color: transparentize(green, .33);
+}
