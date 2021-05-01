@@ -1,6 +1,10 @@
 /*------------------------------------*\
     $CONTAINER
 \*------------------------------------*/
-.container-small{width: 50%;}
-.container{width: 70%;}
-.container-large{width: 90%;}
+@mixin container-center{
+  margin: 0 auto;
+}
+
+.container-small{@include container-center;width: 50%;}
+.container{@include container-center;width: 70%;}
+.container-large{@include container-center;width: 90%;}

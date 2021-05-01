@@ -1,9 +1,34 @@
 // Colors
 $white : #ffffff;
 $gallery : #eeeeee;
+$blaze-orange : #FF6701;
+$blue-ribbon : #0D72FF;
+$mountain-green: #12B361;
 
 .white{background-color: $white !important;}
 .white-text{background-color: $white !important;}
 
 .gallery{background-color: $gallery !important;}
 .gallery-text{background-color: $gallery !important;}
+
+.blaze-orange {background-color: $blaze-orange !important;}
+.blaze-orange-text {background-color: $blaze-orange !important;}
+.border-blaze-orange {border: solid 10px darken($blaze-orange, 15);}
+
+.blue-ribbon {background-color: $blue-ribbon !important;}
+.blue-ribbon-text {background-color: $blue-ribbon !important;}
+.border-blue-ribbon{border: solid 10px darken($blue-ribbon, 15);}
+
+.mountain-green {background-color: $mountain-green !important;}
+.mountain-green-text {background-color: $mountain-green !important;}
+.border-mountain-green{border: solid 10px darken($mountain-green, 15);}
+
+
+.box{
+    height:100px;
+    width: 100px;
+    box-sizing: border-box;
+}
+a{
+    color: $blaze-orange
+}

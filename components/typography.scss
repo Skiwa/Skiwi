@@ -13,10 +13,31 @@
     text-overflow: ellipsis;
 }
 
+html{
+  font-size: 62.5%
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+h1{font-size: 4.6rem;}
+h2{font-size: 3.6rem;}
+h3{font-size: 2.8rem;}
+h4{font-size: 2.2rem;}
+h5{font-size: 1.8rem;}
+h6{font-size: 1.6rem;}
+
+code{
+    font-family: monospace;
+    background-color: #fafafa;
+}
+
 // Text styles
 a {text-decoration: none;}
 em { font-style: italic; }
-strong { font-weight: 500; }
+strong { font-weight: 600; }
 small { font-size: 75%; }
 .light { font-weight: 300; }
 .thin { font-weight: 200; }

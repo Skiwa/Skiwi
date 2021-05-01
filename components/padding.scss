@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    $PADDINGS
+\*------------------------------------*/
+$padding-xs: 5px;
+$padding-s: 10px;
+$padding-m: 20px;
+$padding-l: 40px;
+
+.padding-top-xs{padding-top: $padding-xs;}
+.padding-top-s{padding-top: $padding-s;}
+.padding-top-m{padding-top: $padding-m;}
+.padding-top-l{padding-top: $padding-l;}
+
+.padding-right-xs{padding-right: $padding-xs;}
+.padding-right-s{padding-right: $padding-s;}
+.padding-right-m{padding-right: $padding-m;}
+.padding-right-l{padding-right: $padding-l;}
+
+
+.padding-bottom-xs{padding-bottom: $padding-xs;}
+.padding-bottom-s{padding-bottom: $padding-s;}
+.padding-bottom-m{padding-bottom: $padding-m;}
+.padding-bottom-l{padding-bottom: $padding-l;}
+
+.padding-left-xs{padding-left: $padding-xs;}
+.padding-left-s{padding-left: $padding-s;}
+.padding-left-m{padding-left: $padding-m;}
+.padding-left-l{padding-left: $padding-l;}
+
+
+.padding-xs{padding: $padding-xs;}
+.padding-vertical-xs{padding: $padding-xs default;}
+.padding-horizontal-xs{padding: default $padding-xs;}
+
+.padding-s{padding: $padding-s;}
+.padding-vertical-s{padding: $padding-s default;}
+.padding-horizontal-s{padding: default $padding-s;}
+
+.padding-m{padding: $padding-m;}
+.padding-vertical-m{padding: $padding-m default;}
+.padding-horizontal-m{padding: default $padding-m;}
+
+.padding-l{padding: $padding-l;}
+.padding-vertical-l{padding: $padding-l default;}
+.padding-horizontal-l{padding: default $padding-l;}

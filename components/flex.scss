@@ -1,16 +1,21 @@
 /*------------------------------------*\
     $FLEX
 \*------------------------------------*/
+@mixin default-flex{
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  flex-shrink: 1;
+  flex: 1;
+}
+
 .flex {
-    display: flex;
-    flex-direction: row;
-    align-content: stretch;
-    flex-shrink: 1;
-    flex: 1;
-  }
+  @include default-flex;
+}
   
 .flex-column{
-    flex-direction: column;
+  @include default-flex;
+  flex-direction: column;
 }
   
   // Justify content
@@ -43,20 +48,14 @@
   .ai-center{
     align-items: center;
   }
-  .ai-space-between{
-    align-items: space-between;
-  }
-  .ai-space-around{
-    align-items: space-around;
-  }
-  .ai-space-evenly{
-    align-items: space-evenly;
-  }
   .ai-start{
     align-items: flex-start;
   }
   .ai-end{
     align-items: flex-end;
+  }
+  .ai-baseline{
+    align-items: baseline;
   }
   .ai-stretch{
     align-items: stretch;
@@ -69,34 +68,34 @@
   /*------------------------------------*\
       $FLEX-WIDTH
   \*------------------------------------*/
-  .col-one-quarter{
+  .flex-one-quarter{
     flex:.25;
   }
-  .col-one-third{
+  .flex-one-third{
     flex:.33;
   }
-  .col-half{
+  .flex-half{
     flex:.5;
   }
-  .col-two-thirds{
+  .flex-two-thirds{
     flex:.66;
   }
-  .col-three-quarters{
+  .flex-three-quarters{
     flex:.75;
   }
-  .col-full{
+  .flex-full{
     flex:1;
   }
-  .col-one-fifth{
+  .flex-one-fifth{
     flex:.2;
   }
-  .col-two-fifths{
+  .flex-two-fifths{
     flex:.4;
   }
-  .col-three-fifths{
+  .flex-three-fifths{
     flex:.6;
   }
-  .col-four-fifths{
+  .flex-four-fifths{
     flex:.8;
   }
   

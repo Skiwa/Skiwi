@@ -26,3 +26,20 @@ $margin-l: 40px;
 .margin-left-s{margin-left: $margin-s;}
 .margin-left-m{margin-left: $margin-m;}
 .margin-left-l{margin-left: $margin-l;}
+
+
+.margin-xs{margin: $margin-xs;}
+.margin-vertical-xs{margin: $margin-xs default;}
+.margin-horizontal-xs{margin: default $margin-xs;}
+
+.margin-s{margin: $margin-s;}
+.margin-vertical-s{margin: $margin-s default;}
+.margin-horizontal-s{margin: default $margin-s;}
+
+.margin-m{margin: $margin-m;}
+.margin-vertical-m{margin: $margin-m default;}
+.margin-horizontal-m{margin: default $margin-m;}
+
+.margin-l{margin: $margin-l;}
+.margin-vertical-l{margin: $margin-l default;}
+.margin-horizontal-l{margin: default $margin-l;}
