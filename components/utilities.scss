@@ -5,6 +5,13 @@
 .min-100-vh{min-height: 100vh;}
 
 .hide {display: none !important;}
+.block {display: block !important;}
+
+img.responsive-img,
+video.responsive-video {
+  max-width: 100%;
+  height: auto;
+}
 
 .hide-s-only, .hide-s-and-down {
     @media #{$small-and-down} {
