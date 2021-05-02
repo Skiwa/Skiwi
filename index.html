@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+        <title>Skiwi</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href="/bin/skiwi.min.css" rel="stylesheet" />
+        <link href="./preview/preview.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main style="background-color:orange">
+            <section class="gallery padding-m">
+                <div class="container">
+                    <h1>Table of contents</h1>
+                    <br>
+                    <ol style="list-style:decimal">
+                        <li>
+                            <a href="#debug">Debug</a>
+                        </li>
+                        <li>
+                            <a href="#containers">Containers</a>
+                        </li>
+                        <li>
+                            <a href="#flex">Flex</a>
+                        </li>
+                        <li>
+                            <a href="#grid">Grid</a>
+                        </li>
+                        <li>
+                            <a href="#shadows">Shadows</a>
+                        </li>
+                        <li>
+                            <a href="#margin-padding">Margin & Padding</a>
+                        </li>
+                        <li>
+                            <a href="#typography">Typography</a>
+                        </li>
+                        <li>
+                            <a href="#utilities">Utilities</a>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section class="white padding-m" id="debug">
+                <div class="container">
+                    <h1>Debug</h1>
+                    <hr class="margin-bottom-m" />
+                    <div class="flex jc-space-evenly">
+                        <div class="flex flex-column jc-center ai-center">
+                            <div class="box debug-red margin-bottom-s"></div>
+                            <code>.debug-red</code>
+                        </div>
+                        <div class="flex flex-column jc-center ai-center">
+                            <div class="box debug-green margin-bottom-s"></div>
+                            <code>.debug-green</code>
+                        </div>
+                        <div class="flex flex-column jc-center ai-center">
+                            <div class="box debug-blue margin-bottom-s"></div>
+                            <code>.debug-blue</code>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery padding-m" id="containers">
+                <div class="container">
+                    <h1>Containers</h1>
+                    <hr class="margin-bottom-m" />
+                    <div class="white">
+                        <div class="debug-red container-small flex jc-center ai-center" style="height:200px">
+                            <code>.container-small</code>
+                        </div>
+                        <div class="debug-green container flex jc-center ai-center" style="height:200px">
+                            <code>.container</code>
+                        </div>
+                        <div class="debug-blue container-large flex jc-center ai-center" style="height:200px">
+                            <code>.container-large</code>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="white padding-m" id="flex">
+                <div class="container">
+                    <h1>Flex</h1>
+                    <hr class="margin-bottom-m" />
+                    <br />
+                    <h2>Direction</h2>
+                    <br />
+                    <span class="text-align-center">Parent : <code>.flex</code></span>
+                    <div class="gallery flex" style="border: solid black 2px">
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                    </div>
+                    <br />
+                    <span class="text-align-center">Parent : <code>.flex-column</code></span>
+                    <div class="gallery flex-column" style="border: solid black 2px">
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                    </div>
+                    <br />
+
+                    <br />
+                    <h2>Justify-content (<code>jc</code>)</h2>
+                    <br />
+                    <span class="text-align-center">Parent : <code>.flex .jc-space-between</code></span>
+                    <div class="gallery flex jc-space-between" style="border: solid black 2px">
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                    </div>
+
+                    <br />
+                    <span>Parent : <code>.flex .jc-space-around</code></span>
+                    <div class="gallery flex jc-space-around" style="border: solid black 2px">
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                    </div>
+                    <br />
+                    <span>Parent : <code>.flex .jc-space-evenly</code></span>
+                    <div class="gallery flex jc-space-evenly" style="border: solid black 2px">
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                    </div>
+
+                    <br />
+                    <span>Parent : <code>.flex .jc-center</code></span>
+                    <div class="gallery flex jc-center" style="border: solid black 2px">
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                    </div>
+
+                    <br />
+                    <span>Parent : <code>.flex .jc-start</code></span>
+                    <div class="gallery flex jc-start" style="border: solid black 2px">
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                    </div>
+
+                    <br />
+                    <span>Parent : <code>.flex .jc-end</code></span>
+                    <div class="gallery flex jc-end" style="border: solid black 2px">
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                        <div class="box border-blaze-orange blaze-orange"></div>
+                    </div>
+                    <br />
+                    <br />
+                    <span>Same examples with <code>flex-column</code>. We used 6 <code>.flex-column</code> containers inside
+                        a <code>.flex</code> one for display purposes.</span>
+                    <div class="gallery flex" style="height:500px">
+                        <div class="gallery flex-column jc-space-between ai-center" style="border: solid black 2px">
+                            <div class="box border-blaze-orange blaze-orange"></div>
+                            <div class="box border-blaze-orange blaze-orange"></div>
+                        </div>
+                        <div class="gallery flex-column jc-space-around ai-center" style="border: solid black 2px">
+                            <div class="box border-blaze-orange blaze-orange"></div>
+                            <div class="box border-blaze-orange blaze-orange"></div>
+                        </div>
+                        <div class="gallery flex-column jc-space-evenly ai-center" style="border: solid black 2px">
+                            <div class="box border-blaze-orange blaze-orange"></div>
+                            <div class="box border-blaze-orange blaze-orange"></div>
+                        </div>
+                        <div class="gallery flex-column jc-center ai-center" style="border: solid black 2px">
+                            <div class="box border-blaze-orange blaze-orange"></div>
+                            <div class="box border-blaze-orange blaze-orange"></div>
+                        </div>
+                        <div class="gallery flex-column jc-start ai-center" style="border: solid black 2px">
+                            <div class="box border-blaze-orange blaze-orange"></div>
+                            <div class="box border-blaze-orange blaze-orange"></div>
+                        </div>
+                        <div class="gallery flex-column jc-end ai-center" style="border: solid black 2px">
+                            <div class="box border-blaze-orange blaze-orange"></div>
+                            <div class="box border-blaze-orange blaze-orange"></div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <h2>Align-items (<code>ai</code>)</h2>
+                    <br />
+                    <span>Parent : <code>.flex</code></span>
+                    <div class="gallery flex" style="border: solid black 2px; height:300px">
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 200px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 100px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 150px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 75px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 200px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 100px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon"></div>
+                    </div>
+
+                    <br />
+                    <span>Parent : <code>.flex .ai-center</code></span>
+                    <div class="gallery flex ai-center" style="border: solid black 2px; height:300px">
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 200px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 100px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 150px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 75px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 200px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 100px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon"></div>
+                    </div>
+
+                    <br />
+                    <span>Parent : <code>.flex .ai-start</code></span>
+                    <div class="gallery flex ai-start" style="border: solid black 2px; height:300px">
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 200px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 100px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 150px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 75px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 200px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 100px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon"></div>
+                    </div>
+
+                    <br />
+                    <span>Parent : <code>.flex .ai-end</code></span>
+                    <div class="gallery flex ai-end" style="border: solid black 2px; height:300px">
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 200px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 100px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 150px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 75px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 200px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 100px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon"></div>
+                    </div>
+
+                    <br />
+                    <span>Parent : <code>.flex .ai-baseline</code></span>
+                    <div class="gallery flex ai-baseline" style="border: solid black 2px; height:300px">
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 200px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 100px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 150px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 75px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 200px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon" style="height: 100px"></div>
+                        <div class="box border-blue-ribbon blue-ribbon"></div>
+                    </div>
+
+                    <br />
+                    <h2>Flex-length</h2>
+                    <br />
+
+                    <div class="gallery flex-column" style="border: solid black 2px;">
+                        <div class="flex margin-bottom-xs">
+                            <div class="mountain-green flex flex-one-quarter jc-center">
+                                <code>.flex-one-quarter</code>
+                            </div>
+                        </div>
+                        <div class="flex margin-bottom-xs">
+                            <div class="mountain-green flex flex-one-third jc-center">
+                                <code>.flex-one-third</code>
+                            </div>
+                        </div>
+                        <div class="flex margin-bottom-xs">
+                            <div class="mountain-green flex flex-half jc-center">
+                                <code>.flex-one-half</code>
+                            </div>
+                        </div>
+                        <div class="flex margin-bottom-xs">
+                            <div class="mountain-green flex flex-two-thirds jc-center">
+                                <code>.flex-two-thirds</code>
+                            </div>
+                        </div>
+                        <div class="flex margin-bottom-xs">
+                            <div class="mountain-green flex flex-three-quarters jc-center">
+                                <code>.flex-three-quarters</code>
+                            </div>
+                        </div>
+                        <div class="flex margin-bottom-xs">
+                            <div class="mountain-green flex flex-full jc-center">
+                                <code>.flex-full</code>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="flex margin-bottom-xs">
+                            <div class="mountain-green flex flex-one-fifth jc-center">
+                                <code>.flex-one-fifth</code>
+                            </div>
+                        </div>
+                        <div class="flex margin-bottom-xs">
+                            <div class="mountain-green flex flex-two-fifths jc-center">
+                                <code>.flex-two-fifths</code>
+                            </div>
+                        </div>
+                        <div class="flex margin-bottom-xs">
+                            <div class="mountain-green flex flex-three-fifths jc-center">
+                                <code>.flex-three-fifths</code>
+                            </div>
+                        </div>
+                        <div class="flex margin-bottom-xs">
+                            <div class="mountain-green flex flex-four-fifths jc-center">
+                                <code>.flex-four-fifths</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery padding-m" id="grid">
+                <div class="container">
+                    <h1>Grid</h1>
+                    <hr class="margin-bottom-m" />
+                    <span>All columns are contained into a <code>.row</code> parent</span>
+                    <br />
+                    <h2>Columns</h2>
+                    <br />
+                    <!-- Columns -->
+                    <div class="white" style="border: solid black 2px">
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s1 flex jc-center">
+                                <code>.col s1</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s2 flex jc-center">
+                                <code>.col s2</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s3 flex jc-center">
+                                <code>.col s3</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s4 flex jc-center">
+                                <code>.col s4</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s5 flex jc-center">
+                                <code>.col s5</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s6 flex jc-center">
+                                <code>.col s6</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s7 flex jc-center">
+                                <code>.col s7</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s8 flex jc-center">
+                                <code>.col s8</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s9 flex jc-center">
+                                <code>.col s9</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s10 flex jc-center">
+                                <code>.col s10</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s11 flex jc-center">
+                                <code>.col s11</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s12 flex jc-center">
+                                <code>.col s12</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <h2>Offset</h2>
+                    <br />
+                    <!-- Offset -->
+                    <div class="white" style="border: solid black 2px">
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s3 flex jc-center">
+                                <code>.col s3</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s3 offset-s1 flex jc-center">
+                                <code>.col s3 offset-s1</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s3 offset-s2 flex jc-center">
+                                <code>.col s3 offset-s2</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s3 offset-s3 flex jc-center">
+                                <code>.col s3 offset-s3</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s3 offset-s4 flex jc-center">
+                                <code>.col s3 offset-s4</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s3 offset-s5 flex jc-center">
+                                <code>.col s3 offset-s5</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s3 offset-s6 flex jc-center">
+                                <code>.col s3 offset-s6</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s3 offset-s7 flex jc-center">
+                                <code>.col s3 offset-s7</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s3 offset-s8 flex jc-center">
+                                <code>.col s3 offset-s8</code>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s3 offset-s9 flex jc-center">
+                                <code>.col s3 offset-s9</code>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s3 flex jc-center">
+                                <code>.col s3</code>
+                            </div>
+                            <div class="blaze-orange col s4 offset-s1 flex jc-center">
+                                <code>.col s4 offset-s1</code>
+                            </div>
+                            <div class="blaze-orange col s3 offset-s1 flex jc-center">
+                                <code>.col s3 offset-s1</code>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <h2>Responsive design</h2>
+                    <br />
+                    <ul>
+                        <li>
+                            <span><strong>Mobile Devices (<= 600px)</strong> : <code>.s</code></span>
+                        </li>
+                        <li>
+                            <span><strong>Tablet Devices (> 600px)</strong> : <code>.m</code></span>
+                        </li>
+                        <li>
+                            <span><strong>Desktop Devices (> 992px)</strong> : <code>.l</code></span>
+                        </li>
+                        <li>
+                            <span><strong>Large Desktop Devices (> 1200px)</strong> : <code>.xl</code></span>
+                        </li>
+                    </ul>
+                    <br />
+                    <div class="white" style="border: solid black 2px">
+                        <br />
+                        <span style="text-align:center; display:block">Full width on all devices</span>
+                        <br />
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s12 flex jc-center">
+                                <code>.col s12</code>
+                            </div>
+                        </div>
+                        <br />
+                        <span style="text-align:center; display:block">Full width on mobile devices and half width
+                            beyond</span>
+                        <br />
+                        <div class="row margin-bottom-xs">
+                            <div class="blaze-orange col s12 m6 flex jc-center">
+                                <code>.col s12 m6</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="white padding-m" id="shadows">
+                <div class="container">
+                    <h1>Shadows</h1>
+                    <hr class="margin-bottom-m" />
+                    <div class="flex jc-space-evenly">
+                        <div class="flex flex-column jc-center ai-center">
+                            <div class="box depth-1 margin-bottom-s"></div>
+                            <code>.depth-1</code>
+                        </div>
+                        <div class="flex flex-column jc-center ai-center">
+                            <div class="box depth-2 margin-bottom-s"></div>
+                            <code>.depth-2</code>
+                        </div>
+                        <div class="flex flex-column jc-center ai-center">
+                            <div class="box depth-3 margin-bottom-s"></div>
+                            <code>.depth-3</code>
+                        </div>
+                        <div class="flex flex-column jc-center ai-center">
+                            <div class="box depth-4 margin-bottom-s"></div>
+                            <code>.depth-4</code>
+                        </div>
+                        <div class="flex flex-column jc-center ai-center">
+                            <div class="box depth-5 margin-bottom-s"></div>
+                            <code>.depth-5</code>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery padding-m" id="margin-padding">
+                <div class="container">
+                    <h1>Margin & Padding</h1>
+                    <hr class="margin-bottom-m" />
+                    <span>Default values : </span>
+                    <div class="flex jc-space-center">
+                        <div class="margin-right-m">
+                            <strong>xs: </strong>
+                            <span>5px</span>
+                        </div>
+                        <div class="margin-right-m">
+                            <strong>s: </strong>
+                            <span>10px</span>
+                        </div>
+                        <div class="margin-right-m">
+                            <strong>m: </strong>
+                            <span>20px</span>
+                        </div>
+                        <div class="margin-right-m">
+                            <strong>l: </strong>
+                            <span>40px</span>
+                        </div>
+                    </div>
+                    <br />
+                    <ul>
+                        <li>
+                            <code>.margin-[left|top|right|bottom|vertical|horizontal]-[xs|s|m|l]</code>
+                        </li>
+                        <li>
+                            <code>.margin-[xs|m|l]</code>
+                        </li>
+                        <br />
+                        <li>
+                            <code>.padding-[left|top|right|bottom|vertical|horizontal]-[xs|s|m|l]</code>
+                        </li>
+                        <li>
+                            <code>.padding-[xs|m|l]</code>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="white padding-m" id="typography">
+                <div class="container">
+                    <h1>Typography</h1>
+                    <hr class="margin-bottom-m" />
+                    <ul>
+                        <li>
+                            <h1>Header 1 - <small>4.6rem (46px)</small></h1>
+                        </li>
+                        <li>
+                            <h2>Header 2 - <small>3.6rem (36px)</small></h2>
+                        </li>
+                        <li>
+                            <h3>Header 3 - <small>2.8rem (28px)</small></h3>
+                        </li>
+                        <li>
+                            <h4>Header 4 - <small>2.2rem (22px)</small></h4>
+                        </li>
+                        <li>
+                            <h5>Header 5 - <small>1.8rem (18px)</small></h5>
+                        </li>
+                        <li>
+                            <h6>Header 6 - <small>1.6rem (16px)</small></h6>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="gallery padding-m" id="utilities">
+                <div class="container">
+                    <h1>Utilities</h1>
+                    <hr class="margin-bottom-m" />
+                    <ul>
+                        <li>
+                            <span><code>.min-100-vh</code> : Set a min height of 100vh (100% of the viewport height) for an
+                                element</span>
+                        </li>
+                        <li>
+                            <code>.hide</code>
+                        </li>
+                        <li>
+                            <code>.hide-s-only</code>
+                        </li>
+                        <li>
+                            <code>.hide-s-and-down</code>
+                        </li>
+                        <li>
+                            <code>.hide-m-only</code>
+                        </li>
+                        <li>
+                            <code>.hide-m-and-down</code>
+                        </li>
+                        <li>
+                            <code>.hide-m-and-up</code>
+                        </li>
+                        <li>
+                            <code>.hide-l-only</code>
+                        </li>
+                        <li>
+                            <code>.hide-xl-only</code>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
