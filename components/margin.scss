@@ -29,17 +29,17 @@ $margin-l: 40px;
 
 
 .margin-xs{margin: $margin-xs;}
-.margin-vertical-xs{margin: $margin-xs default;}
-.margin-horizontal-xs{margin: default $margin-xs;}
+.margin-vertical-xs{margin: $margin-xs 0;}
+.margin-horizontal-xs{margin: 0 $margin-xs;}
 
 .margin-s{margin: $margin-s;}
-.margin-vertical-s{margin: $margin-s default;}
-.margin-horizontal-s{margin: default $margin-s;}
+.margin-vertical-s{margin: $margin-s 0;}
+.margin-horizontal-s{margin: 0 $margin-s;}
 
 .margin-m{margin: $margin-m;}
-.margin-vertical-m{margin: $margin-m default;}
-.margin-horizontal-m{margin: default $margin-m;}
+.margin-vertical-m{margin: $margin-m 0;}
+.margin-horizontal-m{margin: 0 $margin-m;}
 
 .margin-l{margin: $margin-l;}
-.margin-vertical-l{margin: $margin-l default;}
-.margin-horizontal-l{margin: default $margin-l;}
+.margin-vertical-l{margin: $margin-l 0;}
+.margin-horizontal-l{margin: 0 $margin-l;}
