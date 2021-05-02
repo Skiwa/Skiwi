@@ -29,17 +29,17 @@ $margin-l: 40px;
 
 
 .margin-xs{margin: $margin-xs;}
-.margin-vertical-xs{margin: $margin-xs 0;}
-.margin-horizontal-xs{margin: 0 $margin-xs;}
+.margin-vertical-xs{margin-top: $margin-xs;margin-bottom: $margin-xs;}
+.margin-horizontal-xs{margin-left: $margin-xs;margin-right: $margin-xs;}
 
 .margin-s{margin: $margin-s;}
-.margin-vertical-s{margin: $margin-s 0;}
-.margin-horizontal-s{margin: 0 $margin-s;}
+.margin-vertical-s{margin-top: $margin-s;margin-bottom: $margin-s;}
+.margin-horizontal-s{margin-left: $margin-s;margin-right: $margin-s;}
 
 .margin-m{margin: $margin-m;}
-.margin-vertical-m{margin: $margin-m 0;}
-.margin-horizontal-m{margin: 0 $margin-m;}
+.margin-vertical-m{margin-top: $margin-m;margin-bottom: $margin-m;}
+.margin-horizontal-m{margin-left: $margin-m;margin-right: $margin-m;}
 
 .margin-l{margin: $margin-l;}
-.margin-vertical-l{margin: $margin-l 0;}
-.margin-horizontal-l{margin: 0 $margin-l;}
+.margin-vertical-l{margin-top: $margin-l;margin-bottom: $margin-l;}
+.margin-horizontal-l{margin-left: $margin-l;margin-right: $margin-l;}
