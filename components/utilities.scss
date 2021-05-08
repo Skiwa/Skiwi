@@ -3,6 +3,8 @@
     $UTILITIES
 \*------------------------------------*/
 .min-100-vh{min-height: 100vh;}
+.full-height{height: 100%;}
+.full-width{width: 100%;}
 
 .hide {display: none !important;}
 .block {display: block !important;}
@@ -43,3 +45,4 @@ video.responsive-video {
       display: none !important;
     }
   }
+
