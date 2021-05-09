@@ -9,10 +9,15 @@
 .hide {display: none !important;}
 .block {display: block !important;}
 
-img.responsive-img,
-video.responsive-video {
+img.responsive-img-w,
+video.responsive-video-w {
   max-width: 100%;
   height: auto;
+}
+img.responsive-img-h,
+video.responsive-video-h {
+  max-height: 100%;
+  width: auto;
 }
 
 .hide-s-only, .hide-s-and-down {
