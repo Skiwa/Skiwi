@@ -98,4 +98,12 @@
   .flex-four-fifths{
     flex:.8;
   }
-  
+/*------------------------------------*\
+    $FLEX-WRAP
+\*------------------------------------*/
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.flex-wrap-reverse{
+  flex-wrap: wrap-reverse;
+}
